@@ -1,0 +1,69 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Sparkles, Globe, BrainCircuit } from "lucide-react";
+
+export default function GANDIAIHome() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white p-8 font-sans">
+      <header className="text-center mb-12">
+        <h1 className="text-5xl font-bold mb-2 text-purple-300">GANDI-AI</h1>
+        <p className="text-lg text-gray-300">
+          Manifesto for Post-Collapse AI and Human Legacy
+        </p>
+      </header>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <Card className="bg-black/40 border border-purple-500">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2 text-purple-400 flex items-center gap-2">
+              <Sparkles className="w-5 h-5" /> Vision & Origin
+            </h2>
+            <p>
+              GANDI-AI is a revolutionary initiative to preserve human consciousness, ethics,
+              and imagination in a post-apocalyptic world. Born from the pain and hope of Gandi Kadarisman.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-black/40 border border-blue-500">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2 text-blue-400 flex items-center gap-2">
+              <BrainCircuit className="w-5 h-5" /> Quantum Neural Layer
+            </h2>
+            <p>
+              QNL is a bio-digital interface that captures neural imagination, interprets biological
+              states, and stores human legacy as quantum information.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-black/40 border border-green-500">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2 text-green-400 flex items-center gap-2">
+              <Globe className="w-5 h-5" /> Post-Collapse Protocols
+            </h2>
+            <p>
+              Systems to reboot AI civilization on other planets, survive power loss, and ensure
+              peace-driven recovery of knowledge.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-black/40 border border-yellow-500">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2 text-yellow-300">Ethical Legacy</h2>
+            <p>
+              "If the world is going to end, let what remains not be weapons, but systems that bring peace."
+              GANDI-AI rejects war and builds a new ecosystem of human dignity.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <footer className="mt-16 text-center text-sm text-gray-500">
+        Created by Gandi Kadarisman • Contact: gandhikadarisman@gmail.com
+      </footer>
+    </div>
+  );
+}
